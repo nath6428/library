@@ -4,12 +4,66 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>the Library</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="lib.css">
     </head>
     <body>
+
+        <div class = "side-navbar">
+            <img class="logo" src="templates/logo1.png">
+            <hr class = "navbar-hr">
+            <p class = "navbar-letter">T</p>
+            <p class = "navbar-letter">H</p>
+            <p class = "navbar-letter">E</p>
+            <p class = "navbar-letter"></p>
+            <p class = "navbar-letter"></p>
+            <p class = "navbar-letter">L</p>
+            <p class = "navbar-letter">I</p>
+            <p class = "navbar-letter">B</p>
+            <p class = "navbar-letter">R</p>
+            <p class = "navbar-letter">A</p>
+            <p class = "navbar-letter">R</p>
+            <p class = "navbar-letter">Y</p>
+        </div>
+        <div class = "content-container">
+            <div class = "book-create-bar">
+                <button class = "new-book-button" onclick="showPrompt()">New Book</button>
+            </div>
+            <div class="books-container">
+                <div class = "prompt-div">
+                    <button class = "close" onclick = hidePrompt()>x</button>
+                    <label>Book Name:</label>
+                    <input id = "prompt-input" class="prompt-name">
+                    <label>Author:</label>
+                    <input id = "prompt-input" class="prompt-author">
+                    <label>Number of Pages:</label>
+                    <input id = "prompt-input" type="number" class="prompt-pages">
+                    <label>Finished Reading?:</label>
+                    <input id = "prompt-input" type = "checkbox" class="prompt-read">
+                    <button onclick = newBookPrompt()>Add</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <script src="lib.js" async defer></script>
     </body>

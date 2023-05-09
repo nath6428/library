@@ -1,0 +1,172 @@
+body{
+
+    background-color: black;
+    display: flex;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.side-navbar{
+    
+    position: fixed;
+    width: 8vw;
+    height: 100vh;
+    display: flex;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    border:0px;
+    border-right: 0.1vw;
+    border-color: white;
+    border-style: solid;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.logo {
+    
+    background-color: black;
+    width: 7vw;
+    height: 7vh;
+    padding-top: 3vh;
+}
+
+.navbar-hr{
+    
+    width: 5.5vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.navbar-letter{
+    
+    color: white;
+    margin: 10px;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+
+
+.content-container{
+    
+    position: absolute;
+    left: 8vw;
+    min-width: 92vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-create-bar{
+    
+    height: 13vh;
+    border: 0px;
+    border-bottom: 0.1vh;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-book-button{
+    
+    width: 16vw;
+    height: 3vw;
+    font-size: 1.8vw;
+    border-radius: 1vw;
+    border-color: grey;
+    background-color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.books-container{
+    
+    height:86.9vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prompt-div{
+    
+    height: 49vh;
+    --height: 49vh;
+    width: 24vw;
+    --width: 24vw;
+    margin-left:calc((92vw - var(--width))/2);
+    margin-right:calc((92vw - var(--width))/2);;
+    margin-top: calc((82vh - var(--height))/2);;
+    margin-bottom: calc((82vh - var(--height))/2);;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box;  
+    background-color: white;
+    border: 1vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    
+    position:absolute;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    
+}
+
+.prompt-name, .prompt-author, .prompt-pages{
+
+    width: 20em;
+    text-align: center;
+    margin-bottom: 0.4vw;
+    border-radius: 10px;
+}
+.prompt-read{
+    margin-bottom: 0.4vw;
+
+}
+.close {
+    
+    
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+}
+
+.book-box{
+
+    min-width: 20vw;
+    height: 16vw;
+    margin: 5vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.book-property-tag{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1vw;
+    font-size: 1.3vw;
+}
+
+.delete-tag{
+    
+    margin: 0.2vw;
+    font-size: 1em;
+    background-color: transparent;
+    border: 0;
+    align-self: flex-end;
+
+}
